@@ -9,6 +9,7 @@
             <th>Telefón</th>
             <th>Adresa</th>
             <th>Mesto</th>
+            <th>Možnosti</th>
         </tr>
         </thead>
         <tbody>
@@ -20,7 +21,12 @@
             <td><?php echo $zakaznik['Telefon']; ?></td>
             <td><?php echo $zakaznik['Adresa']; ?></td>
             <td><?php echo $zakaznik['Mesto']; ?></td>
-            </td>
+            <td>
+            <a class="btn btn-info btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznik['idZakaznika']);?>"><span class="glyphicon glyphicon-search"></span> Zobraziť</a>
+            <a class="btn btn-success btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznik['idZakaznika']);?>"><span class="glyphicon glyphicon-ok"></span> Upraviť</a>
+            <a class="btn btn-danger btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznik['idZakaznika']);?>"
+               onClick="return confirm('Ste si istý, že chcete daný záznam vymazať?')"><span class="glyphicon glyphicon-remove"></span> Vymazať</a>
+        </td>
         </tr>
         <?php endforeach; ?>
         </tbody>

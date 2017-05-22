@@ -28,6 +28,7 @@
         <div id="navbar">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url(); ?>about">About</a></li>
+                <li><a href="<?php echo base_url(); ?>zakaznici">Zákazníci</a></li>
             </ul>
         </div>
     </div>
