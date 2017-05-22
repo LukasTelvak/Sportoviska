@@ -1,0 +1,1 @@
+Tu by malo byt nieco o mne.
