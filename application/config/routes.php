@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['zakaznici/create'] = 'zakaznici/create';
+$route['zakaznici/update'] = 'zakaznici/update';
 $route['zakaznici/(:any)'] = 'zakaznici/view/$1';
 $route['default_controller'] = 'pages/view';
 $route['zakaznici'] = 'zakaznici/index';

@@ -20,6 +20,10 @@
         </div>
         <div class="col-md-4">
             <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
+            <br><br>
+            <?php echo form_open('zakaznici/delete/'.$zakaznik['idZakaznika']); ?><input type="submit" value="Vymazať" class="btn btn-danger ">
+            <br><br>
+            <a class="btn btn-success pull-left" href="<?php echo base_url(); ?>zakaznici/edit/<?php echo $zakaznik['idZakaznika']; ?>">Upraviť</a>
         </div>
     </div>
     <div class="row">
