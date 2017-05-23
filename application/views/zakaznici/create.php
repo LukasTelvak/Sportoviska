@@ -23,5 +23,5 @@
         <label for="pwd">Mesto:</label>
         <input type="mesto" class="form-control" name="mesto">
     </div>
-    <button type="submit" class="btn btn-success">Pridať</button>
+    <button type="submit" class="btn btn-success">Pridať</button> <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
 </form>

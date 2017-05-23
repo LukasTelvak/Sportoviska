@@ -1,5 +1,4 @@
 <?php if (!defined( 'BASEPATH')) exit('No direct script acces allowed'); ?>
-<div class="container">
     <div class="row">
         <div class="page-header">
             <h1><?php echo $title; ?></h1>
@@ -29,4 +28,3 @@
     <div class="row">
 
     </div>
-</div>

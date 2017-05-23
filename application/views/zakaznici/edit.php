@@ -24,5 +24,5 @@
     <label>Mesto:</label>
     <input type="mesto" class="form-control" name="mesto" value="<?php echo $zakaznik['Mesto']; ?>">
 </div>
-<button type="submit" class="btn btn-success">Upraviť</button>
+<button type="submit" class="btn btn-success">Upraviť</button> <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
 </form>

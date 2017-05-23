@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="<?php echo base_url();?>assets/images/tennis_ball_icon.png">
 
-    <title>Sportoviska</title>
+    <title>Športoviská</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
@@ -23,12 +23,13 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="<?php echo base_url(); ?>">Sportoviska</a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>">Športoviská</a>
         </div>
         <div id="navbar">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li><a href="<?php echo base_url(); ?>zakaznici">Zákazníci</a></li>
+                <li><a href="<?php echo base_url(); ?>cennik">Cenník</a></li>
             </ul>
         </div>
     </div>
