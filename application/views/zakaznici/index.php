@@ -1,5 +1,8 @@
 <div class="container">
     <h1>Zoznam zákazníkov</h1>
+    <br>
+    <a class="btn btn-success" href="<?php echo base_url() ?>zakaznici/create">Pridať zákazníka</a>
+    <br><br>
     <table class="table table-striped">
         <thead>
         <tr>

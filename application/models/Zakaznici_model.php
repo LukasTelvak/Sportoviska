@@ -41,7 +41,7 @@
 
             $data = array(
                 'meno' => $this->input->post('meno'),
-                'idZakaznika' => $idZakaznika,
+                //'idZakaznika' => $idZakaznika,
                 'priezvisko' => $this->input->post('priezvisko'),
                 'telefon' => $this->input->post('telefon'),
                 'adresa' => $this->input->post('adresa'),
