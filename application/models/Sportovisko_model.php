@@ -23,7 +23,7 @@
                 'idSportovisko' => $idSportovisko,
                 'pocet' => $this->input->post('pocet'),
                 'Vybavenie_idVybavenie' => $this->input->post('Vybavenie_idVybavenie'),
-                'Cennik_idCennik' => $this->input->post('cennik_idCennik')
+                'Cennik_idCennik' => $this->input->post('Cennik_idCennik')
             );
 
             return $this->db->insert('sportovisko', $data);
@@ -42,7 +42,7 @@
                 'nazov_sportoviska' => $this->input->post('nazov'),
                 'pocet' => $this->input->post('pocet'),
                 'Vybavenie_idVybavenie' => $this->input->post('Vybavenie_idVybavenie'),
-                'Cennik_idCennik' => $this->input->post('cennik_idCennik')
+                'Cennik_idCennik' => $this->input->post('Cennik_idCennik')
             );
             $this->db->where('idSportovisko', $this->input->post('idSportovisko'));
             return $this->db->update('sportovisko', $data);
