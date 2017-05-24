@@ -4,12 +4,20 @@
 
 <?php echo form_open('sportovisko/create'); ?>
 <div class="form-group">
-    <label for="email">Názov:</label>
+    <label>Názov:</label>
     <input type="nazov" class="form-control" name="nazov">
 </div>
 <div class="form-group">
-    <label for="email">Počet:</label>
+    <label>Počet:</label>
     <input type="pocet" class="form-control" name="pocet">
+</div>
+<div class="form-group">
+    <label>Vybavenie:</label>
+    <select name="Vybavenie_idVybavenie" class="form-control">
+        <?php foreach($vybavenie as $vybavenia): ?>
+            <option value="<?php echo $vybavenia['idVybavenie']; ?>"><?php echo $vybavenia['Nazov']; ?></option>
+        <?php endforeach; ?>
+    </select>
 </div>
 <button type="submit" class="btn btn-success">Pridať</button> <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
 </form>

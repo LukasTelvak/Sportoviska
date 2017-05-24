@@ -41,4 +41,10 @@
             $this->db->where('idSportovisko', $this->input->post('idSportovisko'));
             return $this->db->update('sportovisko', $data);
         }
+
+        public function get_vybavenie_sportoviska(){
+            $this->db->order_by('Nazov');
+            $query = $this->db->get('vybavenie');
+            return $query->result_array();
+        }
     }

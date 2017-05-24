@@ -27,6 +27,8 @@
         {
             $data['title'] = 'Vložiť nové športovisko';
 
+            $data['vybavenie'] = $this->Sportovisko_model->get_vybavenie_sportoviska();
+
             $this->form_validation->set_rules('nazov', 'Názov', 'required');
 
 
