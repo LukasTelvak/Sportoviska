@@ -49,6 +49,9 @@
 
         public function edit($idSportovisko){
             $data['sportovisko_data'] = $this->Sportovisko_model->get_sportovisko($idSportovisko);
+
+            $data['vybavenie'] = $this->Sportovisko_model->get_vybavenie_sportoviska();
+
             if(empty($data['sportovisko_data'])){
                 show_404();
             }

@@ -6,6 +6,7 @@
 
         public function get_sportovisko($idSportovisko = FALSE){
             if($idSportovisko === FALSE){
+                $this->db->join('vybavenie', 'vybavenie.idVybavenie = sportovisko.Vybavenie_idVybavenie');
                 $query = $this->db->get('sportovisko');
                 return $query->result_array();
             }
@@ -17,9 +18,10 @@
             $idSportovisko = url_title($this->input->post('title'));
 
             $data = array(
-                'nazov' => $this->input->post('nazov'),
+                'nazov_sportoviska' => $this->input->post('nazov'),
                 'idSportovisko' => $idSportovisko,
-                'pocet' => $this->input->post('pocet')
+                'pocet' => $this->input->post('pocet'),
+                'Vybavenie_idVybavenie' => $this->input->post('Vybavenie_idVybavenie')
             );
 
             return $this->db->insert('sportovisko', $data);
@@ -35,8 +37,9 @@
             $idSportovisko = url_title($this->input->post('title'));
 
             $data = array(
-                'nazov' => $this->input->post('nazov'),
+                'nazov_sportoviska' => $this->input->post('nazov'),
                 'pocet' => $this->input->post('pocet'),
+                'Vybavenie_idVybavenie' => $this->input->post('Vybavenie_idVybavenie')
             );
             $this->db->where('idSportovisko', $this->input->post('idSportovisko'));
             return $this->db->update('sportovisko', $data);
