@@ -27,11 +27,12 @@
         </div>
         <div id="navbar">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li><a href="<?php echo base_url(); ?>zakaznici">Zákazníci</a></li>
                 <li><a href="<?php echo base_url(); ?>cennik">Cenník</a></li>
                 <li><a href="<?php echo base_url(); ?>vybavenie">Vybavenie</a></li>
                 <li><a href="<?php echo base_url(); ?>sportovisko">Športoviská</a></li>
+                <li><a href="<?php echo base_url(); ?>rezervacia">Rezervácie</a></li>
+                <li><a href="<?php echo base_url(); ?>about">About</a></li>
             </ul>
         </div>
     </div>

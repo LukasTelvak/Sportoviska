@@ -6,7 +6,6 @@
             $this->load->database();
         }
 
-
         public function get_vybavenie($idVybavenie = FALSE)
         {
             if ($idVybavenie === FALSE) {
