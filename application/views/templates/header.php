@@ -30,6 +30,7 @@
                 <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li><a href="<?php echo base_url(); ?>zakaznici">Zákazníci</a></li>
                 <li><a href="<?php echo base_url(); ?>cennik">Cenník</a></li>
+                <li><a href="<?php echo base_url(); ?>vybavenie">Vybavenie</a></li>
             </ul>
         </div>
     </div>
