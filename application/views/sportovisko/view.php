@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-8">
         <div class="panel panel-default">
-            <?php foreach ($vybavenie_data as $key => $value):?>
+            <?php foreach ($sportovisko_data as $key => $value):?>
                 <div>
                     <dl class="dl-horizontal">
                         <dt><?php print_r ($key);?></dt>
@@ -19,10 +19,10 @@
     </div>
     <div class="col-md-4">
         <button type="button" class="btn btn-default btn-xs" onclick="javascript:window.history.go(-1);">Späť</button>
-        <br><br>
-        <a class="btn btn-success btn-xs" href="<?php echo base_url(); ?>vybavenie/edit/<?php echo $vybavenie_data['idVybavenie']; ?>">Upraviť</a>
-        <br><br>
-        <?php echo form_open('vybavenie/delete/'.$vybavenie_data['idVybavenie']); ?><input type="submit" value="Vymazať" class="btn btn-danger btn-xs">
+        <br>
+        <a class="btn btn-success btn-xs" href="<?php echo base_url(); ?>sportovisko/edit/<?php echo $sportovisko_data['idSportovisko']; ?>">Upraviť</a>
+        <br>
+        <?php echo form_open('sportovisko/delete/'.$sportovisko_data['idSportovisko']); ?><input type="submit" value="Vymazať" class="btn btn-danger btn-xs">
     </div>
 </div>
 <div class="row">
