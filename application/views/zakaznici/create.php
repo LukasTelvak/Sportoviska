@@ -8,10 +8,6 @@
         <input type="meno" class="form-control" name="meno">
     </div>
     <div class="form-group">
-        <label for="pwd">Priezvisko zákazníka:</label>
-        <input type="priezvisko" class="form-control" name="priezvisko">
-    </div>
-    <div class="form-group">
         <label for="pwd">Telefónne číslo:</label>
         <input type="telefon" class="form-control" name="telefon">
     </div>

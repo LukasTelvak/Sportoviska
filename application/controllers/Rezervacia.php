@@ -25,6 +25,10 @@
         public function create(){
             $data['title'] = 'Vložiť novú rezerváciu';
 
+            $data['zakaznici'] = $this->Rezervacia_model->get_zakaznika_rezervacie();
+
+            $data['sportovisko'] = $this->Rezervacia_model->get_sportovisko_rezervacie();
+
             $this->form_validation->set_rules('datum', 'Dátum', 'required');
             $this->form_validation->set_rules('cas', 'Čas', 'required');
             $this->form_validation->set_rules('pocet_ludi', 'Počet ľudí', 'required');
@@ -47,6 +51,10 @@
 
         public function edit($idRezervacia){
             $data['rezervacia_data'] = $this->Rezervacia_model->get_rezervacia($idRezervacia);
+
+            $data['zakaznici'] = $this->Rezervacia_model->get_zakaznika_rezervacie();
+
+            $data['sportovisko'] = $this->Rezervacia_model->get_sportovisko_rezervacie();
             if(empty($data['rezervacia_data'])){
                 show_404();
             }

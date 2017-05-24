@@ -9,6 +9,8 @@
         <th>Dátum</th>
         <th>Čas</th>
         <th>Počet ľudí</th>
+        <th>Zákazník</th>
+        <th>Športovisko</th>
         <th>Detail záznamu</th>
     </tr>
     </thead>
@@ -19,6 +21,8 @@
             <td><?php echo $rezervacia_data['Datum']; ?></td>
             <td><?php echo $rezervacia_data['Cas']; ?></td>
             <td><?php echo $rezervacia_data['Pocet_ludi']; ?></td>
+            <td><?php echo $rezervacia_data['Meno']; ?></td>
+            <td><?php echo $rezervacia_data['Nazov_sportoviska']; ?></td>
             <td>
                 <a class="btn btn-info btn-xs" href="<?php echo site_url('/rezervacia/'.$rezervacia_data['idRezervacia']);?>"> Zobraziť detail</a>
         </tr>

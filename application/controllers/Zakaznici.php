@@ -12,11 +12,11 @@
         }
 
         public function view($idZakaznika = NULL){
-            $data['zakaznik'] = $this->Zakaznici_model->get_Zakaznici($idZakaznika);
-            if(empty($data['zakaznik'])){
+            $data['zakaznici_data'] = $this->Zakaznici_model->get_Zakaznici($idZakaznika);
+            if(empty($data['zakaznici_data'])){
                 show_404();
             }
-            $data['title'] = $data['zakaznik']['Meno'] . $data['zakaznik']['Priezvisko'];
+            $data['title'] = $data['zakaznici_data']['Meno'];
 
             $this->load->view('templates/header');
             $this->load->view('zakaznici/view', $data);
@@ -27,7 +27,6 @@
             $data['title'] = 'Vložiť nového zákazníka';
 
             $this->form_validation->set_rules('meno', 'Meno zákazníka', 'required');
-            $this->form_validation->set_rules('priezvisko', 'Priezvisko zákazníka', 'required');
             $this->form_validation->set_rules('telefon', 'Telefónne číslo', 'required');
             $this->form_validation->set_rules('adresa', 'Adresa', 'required');
             $this->form_validation->set_rules('mesto', 'Mesto', 'required');
@@ -48,8 +47,8 @@
         }
 
         public function edit($idZakaznika){
-            $data['zakaznik'] = $this->Zakaznici_model->get_Zakaznici($idZakaznika);
-            if(empty($data['zakaznik'])){
+            $data['zakaznici_data'] = $this->Zakaznici_model->get_Zakaznici($idZakaznika);
+            if(empty($data['zakaznici_data'])){
                 show_404();
             }
             $data['title'] = 'Upraviť údaje zákazníka';

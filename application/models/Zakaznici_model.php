@@ -20,7 +20,6 @@
             $data = array(
                 'meno' => $this->input->post('meno'),
                 'idZakaznika' => $idZakaznika,
-                'priezvisko' => $this->input->post('priezvisko'),
                 'telefon' => $this->input->post('telefon'),
                 'adresa' => $this->input->post('adresa'),
                 'mesto' => $this->input->post('mesto')
@@ -40,7 +39,6 @@
 
             $data = array(
                 'meno' => $this->input->post('meno'),
-                'priezvisko' => $this->input->post('priezvisko'),
                 'telefon' => $this->input->post('telefon'),
                 'adresa' => $this->input->post('adresa'),
                 'mesto' => $this->input->post('mesto')

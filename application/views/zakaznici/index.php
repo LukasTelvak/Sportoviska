@@ -6,8 +6,7 @@
         <thead>
         <tr>
             <th>Číslo</th>
-            <th>Meno</th>
-            <th>Priezvisko</th>
+            <th>Meno a priezvisko</th>
             <th>Telefón</th>
             <th>Adresa</th>
             <th>Mesto</th>
@@ -15,16 +14,15 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($zakaznici as $zakaznik): ?>
+        <?php foreach ($zakaznici as $zakaznici_data): ?>
         <tr>
-            <td><?php echo $zakaznik['idZakaznika']; ?></td>
-            <td><?php echo $zakaznik['Meno']; ?></td>
-            <td><?php echo $zakaznik['Priezvisko']; ?></td>
-            <td><?php echo $zakaznik['Telefon']; ?></td>
-            <td><?php echo $zakaznik['Adresa']; ?></td>
-            <td><?php echo $zakaznik['Mesto']; ?></td>
+            <td><?php echo $zakaznici_data['idZakaznika']; ?></td>
+            <td><?php echo $zakaznici_data['Meno']; ?></td>
+            <td><?php echo $zakaznici_data['Telefon']; ?></td>
+            <td><?php echo $zakaznici_data['Adresa']; ?></td>
+            <td><?php echo $zakaznici_data['Mesto']; ?></td>
             <td>
-            <a class="btn btn-info btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznik['idZakaznika']);?>"> Zobraziť detail</a>
+            <a class="btn btn-info btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznici_data['idZakaznika']);?>"> Zobraziť detail</a>
         </tr>
         <?php endforeach; ?>
         </tbody>
