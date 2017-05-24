@@ -29,6 +29,8 @@
 
             $data['vybavenie'] = $this->Sportovisko_model->get_vybavenie_sportoviska();
 
+            $data['cennik'] = $this->Sportovisko_model->get_cennik_sportoviska();
+
             $this->form_validation->set_rules('nazov', 'Názov', 'required');
 
 
@@ -51,6 +53,8 @@
             $data['sportovisko_data'] = $this->Sportovisko_model->get_sportovisko($idSportovisko);
 
             $data['vybavenie'] = $this->Sportovisko_model->get_vybavenie_sportoviska();
+
+            $data['cennik'] = $this->Sportovisko_model->get_cennik_sportoviska();
 
             if(empty($data['sportovisko_data'])){
                 show_404();

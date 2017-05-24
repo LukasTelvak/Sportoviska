@@ -9,6 +9,7 @@
         <th>Názov</th>
         <th>Počet</th>
         <th>Vybavenie</th>
+        <th>Hodinová sadzba</th>
         <th>Detail záznamu</th>
     </tr>
     </thead>
@@ -19,6 +20,7 @@
             <td><?php echo $sportovisko_data['Nazov_sportoviska']; ?></td>
             <td><?php echo $sportovisko_data['Pocet']; ?></td>
             <td><?php echo $sportovisko_data['Nazov']; ?></td>
+            <td><?php echo $sportovisko_data['Hodinova_sadzba']; ?></td>
             <td>
                 <a class="btn btn-info btn-xs" href="<?php echo site_url('/sportovisko/'.$sportovisko_data['idSportovisko']);?>"> Zobraziť detail</a>
         </tr>
