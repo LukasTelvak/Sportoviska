@@ -1,10 +1,17 @@
 <?php
     class Vybavenie extends CI_Controller{
-        public function index(){
+        public function index($offset = 0){
+            $config['base_url'] = base_url() . 'vybavenie/index/';
+            $config['total_rows'] = $this->db->count_all('vybavenie');
+            $config['per_page'] = 7;
+            $config['uri_segment'] = 3;
+            $config['attributes'] = array('class' => 'pagination-link');
+
+            $this->pagination->initialize($config);
 
             $data['title'] = 'Zoznam vybavenia športovísk';
 
-            $data['vybavenie'] = $this->Vybavenie_model->get_vybavenie();
+            $data['vybavenie'] = $this->Vybavenie_model->get_vybavenie(FALSE, $config['per_page'], $offset);
 
             $this->load->view('templates/header');
             $this->load->view('vybavenie/index', $data);

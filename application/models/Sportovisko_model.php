@@ -4,7 +4,10 @@
             $this->load->database();
         }
 
-        public function get_sportovisko($idSportovisko = FALSE){
+        public function get_sportovisko($idSportovisko = FALSE, $limit = FALSE, $offset = FALSE){
+            if($limit){
+                $this->db->limit($limit, $offset);
+            }
             if($idSportovisko === FALSE){
                 $this->db->join('vybavenie', 'vybavenie.idVybavenie = sportovisko.Vybavenie_idVybavenie');
                 $this->db->join('cennik', 'cennik.idCennik = sportovisko.Cennik_idCennik');

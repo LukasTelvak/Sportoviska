@@ -6,7 +6,7 @@
             $this->load->database();
         }
 
-        public function get_vybavenie($idVybavenie = FALSE)
+        public function get_vybavenie($idVybavenie = FALSE, $limit = FALSE, $offset = FALSE)
         {
             if ($idVybavenie === FALSE) {
                 $query = $this->db->get('vybavenie');

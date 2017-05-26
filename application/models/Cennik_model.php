@@ -4,7 +4,10 @@
             $this->load->database();
         }
 
-        public function get_cennik($idCennik = FALSE){
+        public function get_cennik($idCennik = FALSE, $limit = FALSE, $offset = FALSE){
+            if($limit){
+                $this->db->limit($limit, $offset);
+            }
             if($idCennik === FALSE){
                 $query = $this->db->get('cennik');
                 return $query->result_array();

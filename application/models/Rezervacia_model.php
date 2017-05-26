@@ -4,8 +4,11 @@
             $this->load->database();
         }
 
-        public function get_rezervacia($idRezervacia = FALSE)
+        public function get_rezervacia($idRezervacia = FALSE, $limit = FALSE, $offset = FALSE)
         {
+            if($limit){
+                $this->db->limit($limit, $offset);
+            }
             if ($idRezervacia === FALSE) {
                 $this->db->join('zakaznici', 'zakaznici.idZakaznika = rezervacia.Zakaznik_idZakaznik');
                 $this->db->join('sportovisko', 'sportovisko.idSportovisko = rezervacia.Sportovisko_idSportovisko');

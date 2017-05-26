@@ -5,7 +5,10 @@
             $this->load->database();
         }
 
-        public function get_zakaznici($idZakaznika = FALSE){
+        public function get_zakaznici($idZakaznika = FALSE, $limit = FALSE, $offset = FALSE){
+            if($limit){
+                $this->db->limit($limit, $offset);
+            }
             if($idZakaznika === FALSE){
                 $query = $this->db->get('zakaznici');
                 return $query->result_array();

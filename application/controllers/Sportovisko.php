@@ -1,10 +1,17 @@
 <?php
     class Sportovisko extends CI_Controller{
-        public function index(){
+        public function index($offset = 0){
+            $config['base_url'] = base_url() . 'sportovisko/index/';
+            $config['total_rows'] = $this->db->count_all('sportovisko');
+            $config['per_page'] = 7;
+            $config['uri_segment'] = 3;
+            $config['attributes'] = array('class' => 'pagination-link');
+
+            $this->pagination->initialize($config);
 
             $data['title'] = 'Zoznam športovísk';
 
-            $data['sportovisko'] = $this->Sportovisko_model->get_sportovisko();
+            $data['sportovisko'] = $this->Sportovisko_model->get_sportovisko(FALSE, $config['per_page'], $offset);
 
             $this->load->view('templates/header');
             $this->load->view('sportovisko/index', $data);
