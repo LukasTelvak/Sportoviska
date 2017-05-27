@@ -1,3 +1,4 @@
+<h1>Grafy zobrazujúce údaje z tabuliek</h1>
 <?php
 $connect = mysqli_connect("localhost", "root", "", "codeigniter");
 $query = "SELECT Mesto, count(*) as number FROM zakaznici GROUP BY Mesto";

@@ -32,7 +32,8 @@
                 <li><a href="<?php echo base_url(); ?>vybavenie">Vybavenie</a></li>
                 <li><a href="<?php echo base_url(); ?>sportovisko">Športoviská</a></li>
                 <li><a href="<?php echo base_url(); ?>rezervacia">Rezervácie</a></li>
-                <li><a href="<?php echo base_url(); ?>about">About</a></li>
+                <li><a href="<?php echo base_url(); ?>about">O aplikácii</a></li>
+                <li><a href="<?php echo base_url(); ?>sources">Zdroje</a></li>
             </ul>
         </div>
     </div>
