@@ -23,17 +23,17 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="<?php echo base_url(); ?>">Športoviská</a>
+            <a class="navbar-brand" href="http://ltelvak17.student.ki.fpv.ukf.sk/">Športoviská</a>
         </div>
         <div id="navbar">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>zakaznici">Zákazníci</a></li>
-                <li><a href="<?php echo base_url(); ?>cennik">Cenník</a></li>
-                <li><a href="<?php echo base_url(); ?>vybavenie">Vybavenie</a></li>
-                <li><a href="<?php echo base_url(); ?>sportovisko">Športoviská</a></li>
-                <li><a href="<?php echo base_url(); ?>rezervacia">Rezervácie</a></li>
-                <li><a href="<?php echo base_url(); ?>about">O aplikácii</a></li>
-                <li><a href="<?php echo base_url(); ?>sources">Zdroje</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici">Zákazníci</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/cennik">Cenník</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie">Vybavenie</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko">Športoviská</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia">Rezervácie</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/about">O aplikácii</a></li>
+                <li><a href="http://ltelvak17.student.ki.fpv.ukf.sk/sources">Zdroje</a></li>
             </ul>
         </div>
     </div>

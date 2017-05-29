@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('zakaznici/update'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici/update'); ?>
 <input type="hidden" name="idZakaznika" value="<?php echo $zakaznici_data['idZakaznika']; ?>">
 <div class="form-group">
     <label>Meno zákazníka:</label>

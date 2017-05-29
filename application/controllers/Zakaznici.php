@@ -1,7 +1,7 @@
 <?php
     class Zakaznici extends CI_Controller{
         public function index($offset = 0){
-            $config['base_url'] = base_url() . 'zakaznici/index/';
+            $config['base_url'] = 'http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici/index/';
             $config['total_rows'] = $this->db->count_all('zakaznici');
             $config['per_page'] = 7;
             $config['uri_segment'] = 3;
@@ -44,13 +44,13 @@
                 $this->load->view('templates/footer');
             }else{
                 $this->Zakaznici_model->create_Zakaznik();
-                redirect('zakaznici');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici');
             }
         }
 
         public function delete($idZakaznika){
             $this->Zakaznici_model->delete_Zakaznik($idZakaznika);
-            redirect('zakaznici');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici');
         }
 
         public function edit($idZakaznika){
@@ -67,6 +67,6 @@
 
         public function update(){
             $this->Zakaznici_model->update_Zakaznik();
-            redirect('zakaznici');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici');
         }
     }

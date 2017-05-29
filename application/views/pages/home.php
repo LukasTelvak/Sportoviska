@@ -1,6 +1,6 @@
 <h1>Grafy zobrazujúce údaje z tabuliek</h1>
 <?php
-$connect = mysqli_connect("localhost", "root", "", "codeigniter");
+$connect = mysqli_connect("localhost", "ltelvak17", "beuisGLrZCT4@", "c1ltelvak17");
 $query = "SELECT Mesto, count(*) as number FROM zakaznici GROUP BY Mesto";
 $result = mysqli_query($connect, $query);
 ?>
@@ -42,7 +42,7 @@ $result = mysqli_query($connect, $query);
 </html>
 
 <?php
-$connect = mysqli_connect("localhost", "root", "", "codeigniter");
+$connect = mysqli_connect("localhost", "ltelvak17", "beuisGLrZCT4@", "c1ltelvak17");
 $query = "SELECT zakaznici.Meno, COUNT(*) as number
 FROM rezervacia
 INNER JOIN zakaznici on (zakaznici.idZakaznika = rezervacia.Zakaznik_idZakaznik)
@@ -87,7 +87,7 @@ $result = mysqli_query($connect, $query);
 </html>
 
 <?php
-$connect = mysqli_connect("localhost", "root", "", "codeigniter");
+$connect = mysqli_connect("localhost", "ltelvak17", "beuisGLrZCT4@", "c1ltelvak17");
 $query = "SELECT sportovisko.Nazov_sportoviska, COUNT(*) as number
 FROM rezervacia
 INNER JOIN sportovisko on (sportovisko.idSportovisko = rezervacia.Sportovisko_idSportovisko)
@@ -132,7 +132,7 @@ $result = mysqli_query($connect, $query);
 </html>
 
 <?php
-$connect = mysqli_connect("localhost", "root", "", "codeigniter");
+$connect = mysqli_connect("localhost", "ltelvak17", "beuisGLrZCT4@", "c1ltelvak17");
 $query = "SELECT Nazov_sportoviska, Pocet FROM sportovisko GROUP BY Nazov_sportoviska";
 $result = mysqli_query($connect, $query);
 ?>

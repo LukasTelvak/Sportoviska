@@ -27,8 +27,8 @@ $route['rezervacia/update'] = 'rezervacia/update';
 $route['rezervacia/(:any)'] = 'rezervacia/view/$1';
 
 $route['default_controller'] = 'pages/view';
-$route['zakaznici'] = 'zakaznici/index';
 
+$route['zakaznici'] = 'zakaznici/index';
 $route['cennik'] = 'cennik/index';
 $route['vybavenie'] = 'vybavenie/index';
 $route['sportovisko'] = 'sportovisko/index';

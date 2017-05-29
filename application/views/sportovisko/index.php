@@ -1,6 +1,6 @@
 <h1>Zoznam športovísk</h1>
 <br>
-<a class="btn btn-success" href="<?php echo base_url() ?>sportovisko/create">Pridať športovisko</a>
+<a class="btn btn-success" href="http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/create">Pridať športovisko</a>
 <br><br>
 <table class="table table-striped">
     <thead>
@@ -22,7 +22,7 @@
             <td><?php echo $sportovisko_data['Nazov']; ?></td>
             <td><?php echo $sportovisko_data['Hodinova_sadzba']; ?></td>
             <td>
-                <a class="btn btn-info btn-xs" href="<?php echo site_url('/sportovisko/'.$sportovisko_data['idSportovisko']);?>"> Zobraziť detail</a>
+                <a class="btn btn-info btn-xs" href="<?php echo ("/sportovisko/view/" . $sportovisko_data['idSportovisko']);?>"> Zobraziť detail</a>
         </tr>
     <?php endforeach; ?>
     </tbody>

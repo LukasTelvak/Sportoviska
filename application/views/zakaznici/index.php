@@ -1,6 +1,6 @@
  <h1>Zoznam zákazníkov</h1>
     <br>
-    <a class="btn btn-success" href="<?php echo base_url() ?>zakaznici/create">Pridať zákazníka</a>
+    <a class="btn btn-success" href="http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici/create">Pridať zákazníka</a>
     <br><br>
     <table class="table table-striped">
         <thead>
@@ -22,7 +22,7 @@
             <td><?php echo $zakaznici_data['Adresa']; ?></td>
             <td><?php echo $zakaznici_data['Mesto']; ?></td>
             <td>
-            <a class="btn btn-info btn-xs" href="<?php echo site_url('/zakaznici/'.$zakaznici_data['idZakaznika']);?>"> Zobraziť detail</a>
+            <a class="btn btn-info btn-xs" href="<?php echo ("/zakaznici/view/" . $zakaznici_data['idZakaznika']);?>"> Zobraziť detail</a>
         </tr>
         <?php endforeach; ?>
         </tbody>

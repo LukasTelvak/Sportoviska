@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('zakaznici/create'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/zakaznici/create'); ?>
     <div class="form-group">
         <label for="email">Meno zákazníka:</label>
         <input type="meno" class="form-control" name="meno">

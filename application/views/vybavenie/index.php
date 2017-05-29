@@ -1,6 +1,6 @@
 <h1>Zoznam vybavenia</h1>
 <br>
-<a class="btn btn-success" href="<?php echo base_url() ?>vybavenie/create">Pridať vybavenie</a>
+<a class="btn btn-success" href="http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie/create">Pridať vybavenie</a>
 <br><br>
 <table class="table table-striped">
     <thead>
@@ -18,7 +18,7 @@
             <td><?php echo $vybavenie_data['Nazov']; ?></td>
             <td><?php echo $vybavenie_data['Pocet_ks']; ?></td>
             <td>
-                <a class="btn btn-info btn-xs" href="<?php echo site_url('/vybavenie/'.$vybavenie_data['idVybavenie']);?>"> Zobraziť detail</a>
+                <a class="btn btn-info btn-xs" href="<?php echo ("/vybavenie/view/" . $vybavenie_data['idVybavenie']);?>"> Zobraziť detail</a>
         </tr>
     <?php endforeach; ?>
     </tbody>
