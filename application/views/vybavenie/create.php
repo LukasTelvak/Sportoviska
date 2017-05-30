@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('vybavenie/create'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie/create'); ?>
 <div class="form-group">
     <label for="email">Názov:</label>
     <input type="nazov" class="form-control" name="nazov">

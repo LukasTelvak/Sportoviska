@@ -1,7 +1,7 @@
 <?php
     class Vybavenie extends CI_Controller{
         public function index($offset = 0){
-            $config['base_url'] = base_url() . 'vybavenie/index/';
+            $config['base_url'] = 'http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie/index/';
             $config['total_rows'] = $this->db->count_all('vybavenie');
             $config['per_page'] = 7;
             $config['uri_segment'] = 3;
@@ -43,13 +43,13 @@
                 $this->load->view('templates/footer');
             }else{
                 $this->Vybavenie_model->create_vybavenie();
-                redirect('vybavenie');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie');
             }
         }
 
         public function delete($idVybavenie){
             $this->Vybavenie_model->delete_vybavenie($idVybavenie);
-            redirect('vybavenie');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie');
         }
 
         public function edit($idVybavenie){
@@ -66,7 +66,7 @@
 
         public function update(){
             $this->Vybavenie_model->update_vybavenie();
-            redirect('vybavenie');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/vybavenie');
         }
 
 

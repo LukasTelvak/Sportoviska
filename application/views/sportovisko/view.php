@@ -20,9 +20,9 @@
     <div class="col-md-4">
         <button type="button" class="btn btn-default" onclick="javascript:window.history.go(-1);">Späť</button>
         <br><br>
-        <a class="btn btn-success" href="<?php echo base_url(); ?>sportovisko/edit/<?php echo $sportovisko_data['idSportovisko']; ?>">Upraviť</a>
+        <a class="btn btn-success" href="http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/edit/<?php echo $sportovisko_data['idSportovisko']; ?>">Upraviť</a>
         <br><br>
-        <?php echo form_open('sportovisko/delete/'.$sportovisko_data['idSportovisko']); ?><input type="submit" value="Vymazať" class="btn btn-danger">
+        <?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/delete/'.$sportovisko_data['idSportovisko']); ?><input type="submit" value="Vymazať" class="btn btn-danger">
     </div>
 </div>
 <div class="row">

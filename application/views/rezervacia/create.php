@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('rezervacia/create'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia/create'); ?>
 <div class="form-group">
     <label for="email">Dátum:</label>
     <input type="datum" class="form-control" name="datum">

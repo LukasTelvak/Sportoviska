@@ -1,7 +1,7 @@
 <?php
     class Cennik extends CI_Controller{
         public function index($offset = 0){
-            $config['base_url'] = base_url() . 'cennik/index/';
+            $config['base_url'] = 'http://ltelvak17.student.ki.fpv.ukf.sk/cennik/index/';
             $config['total_rows'] = $this->db->count_all('cennik');
             $config['per_page'] = 7;
             $config['uri_segment'] = 3;
@@ -42,13 +42,13 @@
                 $this->load->view('templates/footer');
             }else{
                 $this->Cennik_model->create_cennik();
-                redirect('cennik');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/cennik');
             }
         }
 
         public function delete($idCennik){
             $this->Cennik_model->delete_cennik($idCennik);
-            redirect('cennik');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/cennik');
         }
 
         public function edit($idCennik){
@@ -65,7 +65,7 @@
 
         public function update(){
             $this->Cennik_model->update_cennik();
-            redirect('cennik');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/cennik');
         }
 
 }

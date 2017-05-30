@@ -1,7 +1,7 @@
 <?php
     class Sportovisko extends CI_Controller{
         public function index($offset = 0){
-            $config['base_url'] = base_url() . 'sportovisko/index/';
+            $config['base_url'] = 'http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/index/';
             $config['total_rows'] = $this->db->count_all('sportovisko');
             $config['per_page'] = 7;
             $config['uri_segment'] = 3;
@@ -47,13 +47,13 @@
                 $this->load->view('templates/footer');
             } else {
                 $this->Sportovisko_model->create_sportovisko();
-                redirect('sportovisko');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko');
             }
         }
 
             public function delete($idSportovisko){
                 $this->Sportovisko_model->delete_sportovisko($idSportovisko);
-                redirect('sportovisko');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko');
             }
 
         public function edit($idSportovisko){
@@ -75,7 +75,7 @@
 
         public function update(){
             $this->Sportovisko_model->update_sportovisko();
-            redirect('sportovisko');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko');
         }
 
 

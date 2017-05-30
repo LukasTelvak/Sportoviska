@@ -33,7 +33,7 @@ $result = mysqli_query($connect, $query);
 <body>
 <div class="col-md-6">
 <br /><br />
-<div style="width:700px;">
+<div style="width:600px;">
     <br />
     <div id="piechart" style="width: 700px; height: 400px;"></div>
 </div>
@@ -78,7 +78,7 @@ $result = mysqli_query($connect, $query);
 <body>
 <div class="col-md-6">
 <br /><br />
-<div style="width:700px;">
+<div style="width:00px;">
     <br />
     <div id="piechart2" style="width: 700px; height: 400px;"></div>
 </div>
@@ -123,7 +123,7 @@ $result = mysqli_query($connect, $query);
 <body>
 <div class="col-md-6">
 <br /><br />
-<div style="width:700px;">
+<div style="width:600px;">
     <br />
     <div id="piechart3" style="width: 700px; height: 400px;"></div>
 </div>
@@ -165,7 +165,7 @@ $result = mysqli_query($connect, $query);
 <body>
 <div class="col-md-6">
     <br /><br />
-    <div style="width:700px;">
+    <div style="width:600px;">
         <br />
         <div id="piechart4" style="width: 700px; height: 400px;"></div>
     </div>

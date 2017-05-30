@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('cennik/create'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/cennik/create'); ?>
 <div class="form-group">
     <label for="email">Hodinová sadzba:</label>
     <input type="hodinova_sadzba" class="form-control" name="hodinova_sadzba">

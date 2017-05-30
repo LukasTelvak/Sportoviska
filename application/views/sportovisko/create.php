@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('sportovisko/create'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/create'); ?>
 <div class="form-group">
     <label>Názov:</label>
     <input type="nazov" class="form-control" name="nazov">

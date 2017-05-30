@@ -20,9 +20,9 @@
     <div class="col-md-4">
         <button type="button" class="btn btn-default btn-xs" onclick="javascript:window.history.go(-1);">Späť</button>
         <br>
-        <a class="btn btn-success btn-xs" href="<?php echo base_url(); ?>cennik/edit/<?php echo $cennik_data['idCennik']; ?>">Upraviť</a>
+        <a class="btn btn-success btn-xs" href="http://ltelvak17.student.ki.fpv.ukf.sk/cennik/edit/<?php echo $cennik_data['idCennik']; ?>">Upraviť</a>
         <br>
-        <?php echo form_open('cennik/delete/'.$cennik_data['idCennik']); ?><input type="submit" value="Vymazať" class="btn btn-danger btn-xs">
+        <?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/cennik/delete/'.$cennik_data['idCennik']); ?><input type="submit" value="Vymazať" class="btn btn-danger btn-xs">
     </div>
 </div>
 <div class="row">

@@ -1,7 +1,7 @@
 <?php
     class Rezervacia extends CI_Controller{
         public function index($offset = 0){
-            $config['base_url'] = base_url() . 'rezervacia/index/';
+            $config['base_url'] = 'http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia/index/';
             $config['total_rows'] = $this->db->count_all('rezervacia');
             $config['per_page'] = 7;
             $config['uri_segment'] = 3;
@@ -48,13 +48,13 @@
                 $this->load->view('templates/footer');
             }else{
                 $this->Rezervacia_model->create_rezervacia();
-                redirect('rezervacia');
+                redirect('http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia');
             }
         }
 
         public function delete($idRezervacia){
             $this->Rezervacia_model->delete_rezervacia($idRezervacia);
-            redirect('rezervacia');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia');
         }
 
         public function edit($idRezervacia){
@@ -75,6 +75,6 @@
 
         public function update(){
             $this->Rezervacia_model->update_rezervacia();
-            redirect('rezervacia');
+            redirect('http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia');
         }
     }

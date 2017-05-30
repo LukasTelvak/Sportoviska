@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('rezervacia/update'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/rezervacia/update'); ?>
 <input type="hidden" name="idRezervacia" value="<?php echo $rezervacia_data['idRezervacia']; ?>">
     <div class="form-group">
     <label for="email">Dátum:</label>

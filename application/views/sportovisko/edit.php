@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('sportovisko/update'); ?>
+<?php echo form_open('http://ltelvak17.student.ki.fpv.ukf.sk/sportovisko/update'); ?>
 <input type="hidden" name="idSportovisko" value="<?php echo $sportovisko_data['idSportovisko']; ?>">
 <div class="form-group">
     <label>Názov:</label>
