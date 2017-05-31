@@ -1,0 +1,9 @@
+Mojou úlohou bolo vytvori aplikáciu pre športovı komplex ktorı má svoje športoviská a tie prenajíma svojim zákazníkom.
+V databáze sa nachádza 5 tabuliek. V prvej tabu¾ke sa evidujú zákazníci a základné údaje o nich ako telefónne èíslo alebo
+mesto v ktorom ijú. V ïa¾ších tabu¾kách sa nachadzájú údaje o cenníkoch a vybavení športovísk. Nasledujúca tabu¾ka
+informácie o športoviskách kde kadé z nich má pridelenú informáciu o tom aké vybavenie obsahuje a jeho hodinovej sadzbe.
+Posledná tabu¾ka eviduje údaje rezerváciach. Nájdeme tu údaje o dátume a èase rezervácie, poète ¾udoch a zarezervovanom
+športovisku.
+Kadá tabu¾ka obsahuje všetky základné funkcie práce s nimi, tj. vytvorenie, prezeranie, aktualizovanie a
+vymazanie údajov z tabuliek. Všetky tabu¾ky májú monos stránkovania pri vaèšom mnostve uloenıch údajov. Na úvodnej
+obrazovke môeme nájs 4 grafy znázoròujúce niektoré údaje z tabuliek v grafickej podobe.
